@@ -1,0 +1,33 @@
+group 'com.keydak'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+sourceCompatibility = 1.8
+
+repositories {
+   // mavenLocal()
+    mavenCentral()
+   // maven{ url 'http://repo.maven.apache.org/maven2/'}
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    //导入本地的依赖包
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+   // compile group:'javax.ws.rs',name:'javax.ws.rs-api',version:'2.0.1'
+    compile group:'com.google.guava',name:'guava',version:'18.0'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.2'
+    // https://mvnrepository.com/artifact/log4j/log4j
+   // compile group: 'log4j', name: 'log4j', version: '1.2.17'
+    compile group: 'com.sun.jersey', name: 'jersey-server', version: '1.19'
+    compile group: 'com.sun.jersey', name: 'jersey-client', version: '1.19'
+    // https://mvnrepository.com/artifact/com.sun.jersey/jersey-json
+    compile group: 'com.sun.jersey', name: 'jersey-json', version: '1.19'
+    // https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet
+   // compile group: 'com.sun.jersey', name: 'jersey-servlet', version: '1.19'
+
+}
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'

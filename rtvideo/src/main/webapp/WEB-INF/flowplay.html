@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="flowplayer-3.2.13.min.js"></script>
+    <title>RTSP Camera to RTMP Player</title>
+</head>
+
+
+<body>
+<h1>RTSP Camera to RTMP Player</h1>
+
+
+<!-- this A tag is where your Flowplayer will be placed. it can be anywhere -->
+<a
+        href="#"
+        style="display:block;width:520px;height:330px"
+        id="player">
+</a>
+
+<!-- this will install flowplayer inside previous A- tag. -->
+<!-- 修改url为rtmp的应用名称，netConnectionUrl为rtmp服务器的地址 -->
+<script>
+    flowplayer("player", "flowplayer-3.2.18.swf",{
+        clip: {
+            url: 'app',
+            provider: 'rtmp',
+            live: true,
+        },
+        plugins: {
+            rtmp: {
+                url: 'flowplayer.rtmp-3.2.13.swf',
+                netConnectionUrl: 'rtmp://localhost:1935/live1'
+            }
+        }
+    });
+</script>
+
+
+<p>
+    Sample RTMP URL (Live) is "rtmp://live.hkstv.hk.lxdns.com/live/hks"
+</p>
+
+</body>
+</html>

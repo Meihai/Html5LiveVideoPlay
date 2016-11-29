@@ -1,0 +1,44 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : com.keydak : rtvideo-1.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/out/artifacts/rtvideo</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="rtvideo-1.0-SNAPSHOT.war">
+      <element id="javaee-facet-resources" facet="rtvideo_main/web/Web Gradle : rtvideo-1.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="rtvideo_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jersey-json-1.19.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/jersey-servlet-1.19.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/xuggle-xuggler-5.4.jar" />
+          <element id="library" level="project" name="Gradle: com.google.guava:guava:18.0" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-log4j12:1.7.2" />
+          <element id="library" level="project" name="Gradle: com.sun.jersey:jersey-server:1.19" />
+          <element id="library" level="project" name="Gradle: com.sun.jersey:jersey-client:1.19" />
+          <element id="library" level="project" name="Gradle: com.sun.jersey:jersey-json:1.19" />
+          <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.2" />
+          <element id="library" level="project" name="Gradle: log4j:log4j:1.2.17" />
+          <element id="library" level="project" name="Gradle: com.sun.jersey:jersey-core:1.19" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jettison:jettison:1.1" />
+          <element id="library" level="project" name="Gradle: com.sun.xml.bind:jaxb-impl:2.2.3-1" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-core-asl:1.9.2" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-mapper-asl:1.9.2" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-jaxrs:1.9.2" />
+          <element id="library" level="project" name="Gradle: org.codehaus.jackson:jackson-xc:1.9.2" />
+          <element id="library" level="project" name="Gradle: javax.ws.rs:jsr311-api:1.1.1" />
+          <element id="library" level="project" name="Gradle: javax.xml.bind:jaxb-api:2.2.2" />
+          <element id="library" level="project" name="Gradle: javax.xml.stream:stax-api:1.0-2" />
+          <element id="library" level="project" name="Gradle: javax.activation:activation:1.1" />
+          <element id="file-copy" path="$PROJECT_DIR$/libs/junit-4.11.jar" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/out/artifacts/rtvideo/exploded/rtvideo-1.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
